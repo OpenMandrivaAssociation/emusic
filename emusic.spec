@@ -21,24 +21,27 @@ BuildRequires:	edje >= 0.5.0.038, etk-devel >= 0.1.0.003
 Buildrequires:	%{mklibname cdda0}-devel
 Buildrequires:	%{mklibname xmms2_0}-devel
 Buildrequires:  %{mklibname gstreamer-plugins0.8}-devel, gstreamer0.10-plugins-good
+Buildrequires:  %{mklibname gstreamer0.10_0.10}-devel
+Buildrequires:  %{mklibname gstreamer-plugins-base0.10}-devel
 requires: xmms2, edje
 
 %description
-Ephoto is an ewl app that is used for sophisticate image viewing.
-This package is part of the Enlightenment DR17 desktop shell.
+Emusic soft.
 
 %package -n %libname
-Summary: Emusic headers, static libraries, documentation and test programs
-Group: System Environment/Libraries
+Summary: Libraries for the %{name} package
+Group: System/Libraries
 Requires: %{name} = %{version}
 
 %description -n %libname
-Headers, static libraries, test programs and documentation for Emotion
+Headers, static libraries, test programs and documentation for Emusic
 
 %package -n %libnamedev
-Summary: Emusic headers, static libraries, documentation and test programs
-Group: System Environment/Libraries
-Requires: %{name} = %{version}
+Summary: Headers and development libraries from %{name}
+Group: Development/Other
+Requires: %libname = %{version}
+Provides: lib%{name}-devel = %{version}-%{release}
+Provides: %name-devel = %{version}-%{release}
 
 %description -n %libnamedev
 Headers, static libraries, test programs and documentation for Emotion
