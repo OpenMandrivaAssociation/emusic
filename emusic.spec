@@ -20,7 +20,7 @@ BuildRequires:	ecore-devel >= 0.9.9.038, edje-devel >= 0.5.0.038
 BuildRequires:	edje >= 0.5.0.038, etk-devel >= 0.1.0.003
 Buildrequires:	%{mklibname cdda0}-devel
 Buildrequires:	%{mklibname xmms2_0}-devel
-Buildrequires:  %{mklibname gstreamer-plugins0.8}-devel
+Buildrequires:  %{mklibname gstreamer-plugins0.8}-devel, gstreamer0.10-plugins-good
 requires: xmms2, edje
 
 %description
