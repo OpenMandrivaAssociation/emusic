@@ -11,7 +11,7 @@ Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
 License: 	BSD
-Group: 		Applications/Music
+Group: 		Sound
 URL: 		http://www.digital-corner.org/
 Source: 	%{name}-%{version}.tar.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
@@ -45,7 +45,6 @@ Provides: %name-devel = %{version}-%{release}
 
 %description -n %libnamedev
 Headers, static libraries, test programs and documentation for Emotion
-
 
 %prep
 rm -rf $RPM_BUILD_ROOT
