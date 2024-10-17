@@ -12,7 +12,7 @@ Version: 	%{version}
 Release: 	%{release}
 License: 	BSD
 Group: 		Sound
-URL: 		http://www.digital-corner.org/
+URL: 		https://www.digital-corner.org/
 Source: 	%{name}-%{version}.tar.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	evas-devel >= 0.9.9.038
